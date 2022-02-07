@@ -1,6 +1,6 @@
 <template>
     <div>
-        <heading class="mb-6">Sample Tool</heading>
+        <heading class="mb-6">{{ __('Sample Tool') }}</heading>
 
         <card
             class="bg-90 flex flex-col items-center justify-center"
@@ -37,7 +37,7 @@
 export default {
     metaInfo() {
         return {
-          title: 'SampleTool',
+          title: this.__('SampleTool'),
         }
     },
     mounted() {

@@ -43,6 +43,20 @@ export default {
     mounted() {
         //
     },
+    methods: {
+        fetch() {
+            Nova.request()
+                .get(`/api/sample-tool/endpoint`)
+                .then(response =>
+                    this.endpoint = response.data
+                )
+        },
+    },
+    data() {
+        return {
+            endpoint: '',
+        }
+    },
 }
 </script>
 
